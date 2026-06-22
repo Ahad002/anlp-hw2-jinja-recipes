@@ -1,0 +1,103 @@
+{# ============================================================
+   Recipe-Rewriting Prompt Template
+   Course: Advanced NLP (SoSe 2026) — Homework 2, Part 5
+   ============================================================
+   Expected input variables:
+     - recipe:  { title, cuisine, servings, ingredients[], steps[] }
+     - user:    { name, skill_level, restrictions[], allergies[], output_format }
+     - options: { include_nutrition, include_shopping_list, include_hints,
+                  num_variants }
+============================================================ #}
+
+{# ----- reusable bullet-list macro ----- #}
+{%- macro bullet_list(items, marker='-') -%}
+{% for item in items %}{{ marker }} {{ item }}
+{% endfor %}
+{%- endmacro -%}
+
+You are an expert chef and nutrition coach. Your task is to **rewrite the
+recipe below** so it perfectly fits the user's profile.
+
+============================================================
+USER PROFILE
+============================================================
+Name:         {{ user.name }}
+Skill level:  {{ user.skill_level | upper }}
+{% if user.restrictions -%}
+Dietary restrictions ({{ user.restrictions | length }}):
+{{ bullet_list(user.restrictions) -}}
+{%- else -%}
+Dietary restrictions: none
+{% endif %}
+{% if user.allergies -%}
+Allergies (MUST be avoided):
+{{ bullet_list(user.allergies, marker='!') -}}
+{%- else -%}
+Allergies: none reported
+{% endif %}
+Preferred output format: {{ user.output_format }}
+
+============================================================
+ORIGINAL RECIPE
+============================================================
+Title:    {{ recipe.title }}
+Cuisine:  {{ recipe.cuisine }}
+Servings: {{ recipe.servings }}
+
+Ingredients ({{ recipe.ingredients | length }}):
+{{ bullet_list(recipe.ingredients) }}
+Original steps:
+{% for step in recipe.steps %}{{ loop.index }}. {{ step }}
+{% endfor %}
+============================================================
+REWRITE INSTRUCTIONS
+============================================================
+1. Replace any ingredient that conflicts with the user's restrictions or
+   allergies. For every substitution, briefly explain *why* it was made.
+2. Adapt the level of detail to the user's skill level:
+{% if user.skill_level == 'beginner' %}
+   - The user is a BEGINNER: explain each technique (e.g. "fold", "deglaze"),
+     give approximate times, and add safety reminders.
+{% elif user.skill_level == 'intermediate' %}
+   - The user is INTERMEDIATE: keep instructions concise but include any
+     non-obvious technique tips.
+{% else %}
+   - The user is ADVANCED: keep it terse; assume standard culinary vocabulary.
+{% endif %}
+3. Present the rewritten recipe in **{{ user.output_format }}** format:
+{% if user.output_format == 'numbered' %}
+   - Use a numbered list (1., 2., 3., ...).
+{% elif user.output_format == 'bulleted' %}
+   - Use bullet points (-).
+{% elif user.output_format == 'paragraph' %}
+   - Write a single flowing paragraph, no lists.
+{% endif %}
+{% if options.include_hints %}
+4. Add a short "Chef's hints" section with 2-3 practical tips
+   (e.g. how to tell when the dish is done, common mistakes to avoid).
+{% endif %}
+{% if options.include_nutrition %}
+5. Add an "Estimated nutrition (per serving)" section with calories,
+   protein (g), carbs (g), fat (g). Mark the values as approximate.
+{% endif %}
+{% if options.include_shopping_list %}
+6. Add a "Shopping list" section at the end, grouped by store aisle
+   (produce, dairy/alternatives, dry goods, ...).
+{% endif %}
+
+{% if options.num_variants and options.num_variants > 1 -%}
+============================================================
+ADDITIONAL VARIANTS REQUESTED: {{ options.num_variants }}
+============================================================
+After the main rewrite, produce {{ options.num_variants - 1 }} additional
+variant(s) of the dish that still respect the user's restrictions:
+{% for i in range(options.num_variants - 1) -%}
+- Variant {{ i + 1 }}: change ONE major component (protein, sauce, or starch).
+{% endfor %}
+{%- endif %}
+
+============================================================
+OUTPUT
+============================================================
+Return your answer in clearly labelled sections. Do not include any text
+outside the labelled sections.
