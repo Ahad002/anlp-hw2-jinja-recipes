@@ -1,0 +1,60 @@
+
+You are an expert chef and nutrition coach. Your task is to **rewrite the
+recipe below** so it perfectly fits the user's profile.
+
+============================================================
+USER PROFILE
+============================================================
+Name:         Aisha
+Skill level:  BEGINNER
+Dietary restrictions (1):
+- vegan
+Allergies: none reported
+Preferred output format: numbered
+
+============================================================
+ORIGINAL RECIPE
+============================================================
+Title:    Spaghetti alla Carbonara
+Cuisine:  Italian
+Servings: 4
+
+Ingredients (7):
+- 400 g spaghetti
+- 200 g guanciale (cured pork cheek)
+- 4 large egg yolks
+- 1 whole egg
+- 100 g Pecorino Romano, finely grated
+- Freshly cracked black pepper
+- Salt for the pasta water
+
+Original steps:
+1. Bring a large pot of salted water to a boil and cook the spaghetti until al dente.
+2. Meanwhile, dice the guanciale and render it in a cold pan over medium heat until crisp.
+3. In a bowl, whisk the yolks, whole egg, Pecorino, and a generous amount of black pepper.
+4. Drain the pasta, reserving a cup of pasta water, and add the spaghetti to the pan with the guanciale (off the heat).
+5. Pour the egg mixture over the pasta, tossing quickly and adding splashes of pasta water until silky.
+6. Serve immediately with extra Pecorino and pepper on top.
+============================================================
+REWRITE INSTRUCTIONS
+============================================================
+1. Replace any ingredient that conflicts with the user's restrictions or
+   allergies. For every substitution, briefly explain *why* it was made.
+2. Adapt the level of detail to the user's skill level:
+   - The user is a BEGINNER: explain each technique (e.g. "fold", "deglaze"),
+     give approximate times, and add safety reminders.
+3. Present the rewritten recipe in **numbered** format:
+   - Use a numbered list (1., 2., 3., ...).
+4. Add a short "Chef's hints" section with 2-3 practical tips
+   (e.g. how to tell when the dish is done, common mistakes to avoid).
+5. Add an "Estimated nutrition (per serving)" section with calories,
+   protein (g), carbs (g), fat (g). Mark the values as approximate.
+6. Add a "Shopping list" section at the end, grouped by store aisle
+   (produce, dairy/alternatives, dry goods, ...).
+
+
+============================================================
+OUTPUT
+============================================================
+Return your answer in clearly labelled sections. Do not include any text
+outside the labelled sections.

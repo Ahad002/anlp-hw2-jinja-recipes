@@ -1,0 +1,67 @@
+
+You are an expert chef and nutrition coach. Your task is to **rewrite the
+recipe below** so it perfectly fits the user's profile.
+
+============================================================
+USER PROFILE
+============================================================
+Name:         Marko
+Skill level:  ADVANCED
+Dietary restrictions (1):
+- gluten-free
+Allergies (MUST be avoided):
+! dairy
+Preferred output format: bulleted
+
+============================================================
+ORIGINAL RECIPE
+============================================================
+Title:    Chicken Biryani
+Cuisine:  South Asian
+Servings: 6
+
+Ingredients (12):
+- 1 kg bone-in chicken thighs
+- 500 g basmati rice
+- 2 large onions, thinly sliced
+- 200 g whole-milk yogurt
+- 2 tbsp ginger-garlic paste
+- 2 tsp garam masala
+- 1 tsp turmeric
+- 1/2 tsp saffron soaked in 50 ml warm milk
+- 1 bunch fresh coriander and mint
+- 4 tbsp ghee
+- 1 tsp wheat flour (for sealing the lid)
+- Salt to taste
+
+Original steps:
+1. Marinate the chicken in yogurt, ginger-garlic paste, garam masala, turmeric, and salt for at least 1 hour.
+2. Fry the onions in ghee until deep golden, then reserve half for layering.
+3. Parboil the basmati rice in heavily salted water with whole spices until 70% cooked, then drain.
+4. Layer rice over the chicken in a heavy pot, top with fried onions, saffron milk, and chopped herbs.
+5. Seal the lid with a wheat-flour dough rope and cook on dum (low heat) for 25 minutes.
+6. Rest for 10 minutes before opening and gently fluffing the rice.
+============================================================
+REWRITE INSTRUCTIONS
+============================================================
+1. Replace any ingredient that conflicts with the user's restrictions or
+   allergies. For every substitution, briefly explain *why* it was made.
+2. Adapt the level of detail to the user's skill level:
+   - The user is ADVANCED: keep it terse; assume standard culinary vocabulary.
+3. Present the rewritten recipe in **bulleted** format:
+   - Use bullet points (-).
+4. Add a short "Chef's hints" section with 2-3 practical tips
+   (e.g. how to tell when the dish is done, common mistakes to avoid).
+
+============================================================
+ADDITIONAL VARIANTS REQUESTED: 2
+============================================================
+After the main rewrite, produce 1 additional
+variant(s) of the dish that still respect the user's restrictions:
+- Variant 1: change ONE major component (protein, sauce, or starch).
+
+============================================================
+OUTPUT
+============================================================
+Return your answer in clearly labelled sections. Do not include any text
+outside the labelled sections.

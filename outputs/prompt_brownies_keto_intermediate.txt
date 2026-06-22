@@ -1,0 +1,61 @@
+
+You are an expert chef and nutrition coach. Your task is to **rewrite the
+recipe below** so it perfectly fits the user's profile.
+
+============================================================
+USER PROFILE
+============================================================
+Name:         Priya
+Skill level:  INTERMEDIATE
+Dietary restrictions (2):
+- keto
+- low-carb
+Allergies (MUST be avoided):
+! tree nuts
+Preferred output format: paragraph
+
+============================================================
+ORIGINAL RECIPE
+============================================================
+Title:    Classic Fudgy Brownies
+Cuisine:  American
+Servings: 12
+
+Ingredients (8):
+- 200 g unsalted butter
+- 300 g granulated sugar
+- 100 g all-purpose flour
+- 60 g cocoa powder
+- 3 large eggs
+- 1 tsp vanilla extract
+- 1/2 tsp salt
+- 100 g chopped walnuts (optional)
+
+Original steps:
+1. Preheat the oven to 175 °C and line a 23 cm square tin with parchment.
+2. Melt the butter and stir in the sugar, then let cool for 2 minutes.
+3. Whisk in the eggs and vanilla, followed by the cocoa, flour, and salt.
+4. Fold in the walnuts if using and spread the batter into the tin.
+5. Bake for 25-28 minutes until the top is set and the centre is still slightly soft.
+6. Cool completely in the tin before slicing into 12 squares.
+============================================================
+REWRITE INSTRUCTIONS
+============================================================
+1. Replace any ingredient that conflicts with the user's restrictions or
+   allergies. For every substitution, briefly explain *why* it was made.
+2. Adapt the level of detail to the user's skill level:
+   - The user is INTERMEDIATE: keep instructions concise but include any
+     non-obvious technique tips.
+3. Present the rewritten recipe in **paragraph** format:
+   - Write a single flowing paragraph, no lists.
+5. Add an "Estimated nutrition (per serving)" section with calories,
+   protein (g), carbs (g), fat (g). Mark the values as approximate.
+6. Add a "Shopping list" section at the end, grouped by store aisle
+   (produce, dairy/alternatives, dry goods, ...).
+
+
+============================================================
+OUTPUT
+============================================================
+Return your answer in clearly labelled sections. Do not include any text
+outside the labelled sections.
