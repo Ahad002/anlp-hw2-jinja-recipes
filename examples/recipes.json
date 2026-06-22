@@ -1,0 +1,122 @@
+[
+  {
+    "id": "carbonara_vegan_beginner",
+    "recipe": {
+      "title": "Spaghetti alla Carbonara",
+      "cuisine": "Italian",
+      "servings": 4,
+      "ingredients": [
+        "400 g spaghetti",
+        "200 g guanciale (cured pork cheek)",
+        "4 large egg yolks",
+        "1 whole egg",
+        "100 g Pecorino Romano, finely grated",
+        "Freshly cracked black pepper",
+        "Salt for the pasta water"
+      ],
+      "steps": [
+        "Bring a large pot of salted water to a boil and cook the spaghetti until al dente.",
+        "Meanwhile, dice the guanciale and render it in a cold pan over medium heat until crisp.",
+        "In a bowl, whisk the yolks, whole egg, Pecorino, and a generous amount of black pepper.",
+        "Drain the pasta, reserving a cup of pasta water, and add the spaghetti to the pan with the guanciale (off the heat).",
+        "Pour the egg mixture over the pasta, tossing quickly and adding splashes of pasta water until silky.",
+        "Serve immediately with extra Pecorino and pepper on top."
+      ]
+    },
+    "user": {
+      "name": "Aisha",
+      "skill_level": "beginner",
+      "restrictions": ["vegan"],
+      "allergies": [],
+      "output_format": "numbered"
+    },
+    "options": {
+      "include_hints": true,
+      "include_nutrition": true,
+      "include_shopping_list": true,
+      "num_variants": 1
+    }
+  },
+  {
+    "id": "biryani_glutenfree_advanced",
+    "recipe": {
+      "title": "Chicken Biryani",
+      "cuisine": "South Asian",
+      "servings": 6,
+      "ingredients": [
+        "1 kg bone-in chicken thighs",
+        "500 g basmati rice",
+        "2 large onions, thinly sliced",
+        "200 g whole-milk yogurt",
+        "2 tbsp ginger-garlic paste",
+        "2 tsp garam masala",
+        "1 tsp turmeric",
+        "1/2 tsp saffron soaked in 50 ml warm milk",
+        "1 bunch fresh coriander and mint",
+        "4 tbsp ghee",
+        "1 tsp wheat flour (for sealing the lid)",
+        "Salt to taste"
+      ],
+      "steps": [
+        "Marinate the chicken in yogurt, ginger-garlic paste, garam masala, turmeric, and salt for at least 1 hour.",
+        "Fry the onions in ghee until deep golden, then reserve half for layering.",
+        "Parboil the basmati rice in heavily salted water with whole spices until 70% cooked, then drain.",
+        "Layer rice over the chicken in a heavy pot, top with fried onions, saffron milk, and chopped herbs.",
+        "Seal the lid with a wheat-flour dough rope and cook on dum (low heat) for 25 minutes.",
+        "Rest for 10 minutes before opening and gently fluffing the rice."
+      ]
+    },
+    "user": {
+      "name": "Marko",
+      "skill_level": "advanced",
+      "restrictions": ["gluten-free"],
+      "allergies": ["dairy"],
+      "output_format": "bulleted"
+    },
+    "options": {
+      "include_hints": true,
+      "include_nutrition": false,
+      "include_shopping_list": false,
+      "num_variants": 2
+    }
+  },
+  {
+    "id": "brownies_keto_intermediate",
+    "recipe": {
+      "title": "Classic Fudgy Brownies",
+      "cuisine": "American",
+      "servings": 12,
+      "ingredients": [
+        "200 g unsalted butter",
+        "300 g granulated sugar",
+        "100 g all-purpose flour",
+        "60 g cocoa powder",
+        "3 large eggs",
+        "1 tsp vanilla extract",
+        "1/2 tsp salt",
+        "100 g chopped walnuts (optional)"
+      ],
+      "steps": [
+        "Preheat the oven to 175 °C and line a 23 cm square tin with parchment.",
+        "Melt the butter and stir in the sugar, then let cool for 2 minutes.",
+        "Whisk in the eggs and vanilla, followed by the cocoa, flour, and salt.",
+        "Fold in the walnuts if using and spread the batter into the tin.",
+        "Bake for 25-28 minutes until the top is set and the centre is still slightly soft.",
+        "Cool completely in the tin before slicing into 12 squares."
+      ]
+    },
+    "user": {
+      "name": "Priya",
+      "skill_level": "intermediate",
+      "restrictions": ["keto", "low-carb"],
+      "allergies": ["tree nuts"],
+      "output_format": "paragraph"
+    },
+    "options": {
+      "include_hints": false,
+      "include_nutrition": true,
+      "include_shopping_list": true,
+      "num_variants": 1
+    }
+  }
+]
